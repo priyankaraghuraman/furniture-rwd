@@ -60,6 +60,7 @@ body {
   width: 300px;
   margin: 50px auto;
 }
+
 #categoryGrid {
   margin:0px 5%;
   display: grid;
@@ -71,22 +72,27 @@ body {
   "desks desks desks"
   ;
 }
+
 #bookcases {
   grid-area: bookcases;
   background-image:url("../images/bookcases@2x.png");  
 }
+
 #bedroom {
   grid-area: bedroom;
   background-image:url("../images/beds@2x.png");
 }
+
 #couches {
   grid-area: couches;
   background-image:url("../images/couch@2x.png");
 }
+
 #patio {
   grid-area: patio;
   background-image:url("../images/patio@2x.png");
 }
+
 #desks {
   grid-area: desks;
   background-image:url("../images/desks@2x.png");
@@ -101,6 +107,7 @@ body {
   display: grid;
   align-content: end;
 }
+
 .heading{
   background-color: rgba(0,0,0,0.7);
   padding: 15px;
@@ -109,6 +116,7 @@ body {
   font-size: 18px;
   border-bottom: 5px solid #FF6200;
 }
+
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 #navBar {
@@ -116,37 +124,42 @@ body {
   flex-direction: row;
   margin: 0px 5%;
 }
+
 #navBar h1 {
   width: 25%;
   font-weight: 500;
 }
+
 #navigation {
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: space-evenly;
 }
+
 #navigation p {
   cursor: pointer;
   text-decoration: none;
 }
+
 .icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 25%;
 }
+
 .icons img {
   margin: 15px;
   cursor: pointer;
 }
+
 .highlight {
   color: #FF6200;
   font-weight: 700;
 }
 
 /* Typography CSS */
-
 h2 {
   font-size: 60px;
   margin: 0px 0px;
@@ -172,24 +185,29 @@ h4 {
   margin: 0px 0px;
   color: #636364;
 }
+
 @media only screen and (max-width: 1000px) {
   #navigation {
     display: none;
   }
+
   .icons {
     margin-left: auto;
   }
 }
+
 @media only screen and (max-width: 600px) {
   #headline {
     position: static;
     margin: 20px;
   }
+
   #heroGrid {
     grid-template-areas:
     "featuredProduct featuredProduct"
     "secondaryProduct CTA";
   }
+  
   #categoryGrid {
   grid-template-rows: 300px 300px 300px 300px 300px;
   grid-template-columns: 1fr;
